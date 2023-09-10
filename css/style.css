@@ -1,7 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: white;
     margin: 0 auto;
     padding: 0;
+    min-height: 5000px;
 }
 
 main {
@@ -81,17 +92,185 @@ h1 {
     align-items: center;
     margin: inherit;
     padding: inherit;
+    background-color: white;
     height: 30vh;
 }
 
 .proposition__text {
     font-size: 1.5rem;
+    color: blue;
 }
 
 .processes {
     display: flex;
-
+    justify-content: space-around;
+    height: 40vh;
 }
 
+.processes__items {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+}
 
+.processes__circle {
+    align-self: center;
+    background-color: white;
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+    margin-top: -8vh;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: blue;
+    font-size: 1.5em;
+}
+
+.skills__heading {
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    font-size: 2em;
+}
+
+.skill__levels {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em auto;
+    padding: 0;
+    border: 0.1em solid blue
+}
+
+.skill__type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 2em;
+    width: 8em;
+    background-color: blue;
+    color: white;
+}
+
+.percentage__figure {
+    margin-right: 0.3em;
+}
+
+.htmlskill__level {
+    margin: 0;
+    padding: 0;
+    height: 2em;
+    width: 12em;
+    background-color: yellow;
+}
+
+.htmlskill__full {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 2em;
+    width: 18em;
+    background-color: silver;
+}
+
+.cssskill__level {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        width: 6em;
+        background-color: yellow;
+    }
+
+.cssskill__full {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     height: 2em;
+     width: 24em;
+     background-color: silver;
+ }
+
+.jsskill__level {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        width: 3em;
+        background-color: yellow;
+    }
+
+.jsskill__full {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     height: 2em;
+     width: 27em;
+     background-color: silver;
+ }
+
+.phpskill__level {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        width: 1.5em;
+        background-color: yellow;
+    }
+
+.phpskill__full {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     height: 2em;
+     width: 28.5em;
+     background-color: silver;
+ }
+
+.reactskill__level {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        width: 0em;
+        background-color: yellow;
+    }
+
+.reactskill__full {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     height: 2em;
+     width: 30em;
+     background-color: silver;
+ }
+
+.lavarelskill__level {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        width: 0em;
+        background-color: yellow;
+    }
+
+.lavarelskill__full {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     height: 2em;
+     width: 30em;
+     background-color: silver;
+ }
+
+.myportfolio__heading {
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    font-size: 2em;
+}
 
