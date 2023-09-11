@@ -1,12 +1,12 @@
-html {
-    box-sizing: border-box;
-}
+    /* html {
+        box-sizing: border-box;
+    }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    } */
 
 body {
     background-color: white;
@@ -135,7 +135,7 @@ h1 {
 .skills__heading {
     margin-top: 10vh;
     margin-bottom: 7vh;
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 .skill__levels {
@@ -272,7 +272,7 @@ h1 {
 .myportfolio__heading {
     margin-top: 10vh;
     margin-bottom: 7vh;
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 .portfolio {
@@ -298,19 +298,27 @@ h1 {
     color: blue;
 }
 
-img { 
+/* .portfolio__images { 
     object-fit: contain;
     max-width: 20vw;
     max-height: 8vw;
     padding-bottom: 1vw;
-}
+    comment: its the same as 2 down, making sure I understand the .class child selector policy
+} */
 
 .portfolio__pic {
     width: 20vw;
     height: 8vw;
 }
 
-p {
+.portfolio__pic img {
+    object-fit: contain;
+    max-width: 20vw;
+    max-height: 8vw;
+    padding-bottom: 1vw;
+}
+
+.portfolio__minitext {
     margin: 0 auto;
     padding: 0;
 }
@@ -321,3 +329,43 @@ p {
     padding-left: 0.5vw;
 }
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: blue;
+}
+
+.about-me__heading {
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    font-size: 3rem;
+}
+
+.about-me__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-me__pic{
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.about-me img {
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-me__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 30vw;
+}
